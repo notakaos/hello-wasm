@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu -o pipefail
+
+cd site
+npm run serve "$@"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -eu -o pipefail
+NPM_USER=${NPM_USER:-notakaos}
+wasm-pack build --scope $NPM_USER "$@"
